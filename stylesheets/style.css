@@ -6,7 +6,12 @@ body {
   width: 95%;
   margin-left: auto;
   margin-right: auto;
+  background-image: url("background3.2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  ;
 }
+
 
 * {
   box-sizing: border-box;
@@ -15,6 +20,7 @@ body {
 h1 {
   font-family: "Open Sans", sans-serif;
 }
+
 h2 {
   font-family: "Open Sans", sans-serif;
   font-style: italic;
@@ -24,43 +30,76 @@ h2 {
   text-align: center;
 }
 
+
 /*main -div have #img div inside of it*/
 .main {
-  float: left;
-  width: 80%;
-  height: 100%;
-  padding: 3px;
+  background: url("woodtx.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+  width: 25em;
+  height: 40em;
+  margin: 4em 0 2em 10em;
+  border: 4px solid lightgrey;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
 
+.main__inner__box {
+  background: url("model-test.jpg");
+  position: absolute;
+  width: 100%;
+  height: 95%;
+  border-radius: 116px;
 }
 
 /*Div->Button menu on right side of the page*/
 .right {
-  display: inline-block;
+  float: right;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  float: left;
-  width: 10%;
-  height: 100%;
-  border-color: transparent;
+  justify-content: center;
+  margin: 3em 0 3em 3em;
+}
+
+.title__box {
+  background-image: url("woodtx.jpg");
+  background-size: cover;
+  border: 4px solid lightgrey;
+  padding: 2em 10em 2em 10em;
+  mix-blend-mode: normal;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 135.5px;
+}
+
+#title__heading {
+  font-size: 30px;
+  letter-spacing: 2.5px;
+  font-weight: 700;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #FFFAFA;
+  font-style: italic;
 }
 
 #question:hover {
   background-color: rgba(105, 190, 119, 0.5);
-  border-color: rgba(105, 190, 119, 0.671);}
-  
+  border-color: rgba(105, 190, 119, 0.671);
+}
+
 
 /*div where draggable divs are created*/
-#img {  
-  background-image: url("background.png");
+#img {
   position: absolute;
   height: 97%;
-  width: 75%;
-  border: 2px dotted rgba(128, 128, 128, 0.333);
+  width: 70%;
   background-repeat: no-repeat;
   background-size: contain;
-  border-radius: 4px;
+  border-radius: 30px;
   background-position: center;
-  border-radius: 4px;
-  /* z-index: 1;*/
 }
 
 /*draggable and resizable images class*/
@@ -79,21 +118,25 @@ h2 {
   touch-action: none;
   user-select: none;
 }
+
 .dragme:hover {
   border: 1px dotted rgba(128, 128, 128, 0.555);
 
 }
 
 /*hover for draggable images*/
-.dragme:hover .rotation-handle, .rotation-handle:hover{
+.dragme:hover .rotation-handle,
+.rotation-handle:hover {
   display: inline-block;
   border: rgba(117, 128, 115, 0.717);
   background-color: rgba(117, 128, 115, 0.717);
 }
+
 /*hover for draggable image buttons*/
-.dragme:hover #deleteCBtn, #deleteCBtn:hover{
+.dragme:hover #deleteCBtn,
+#deleteCBtn:hover {
   display: inline-block;
-  border:rgba(117, 128, 115, 0.717);
+  border: rgba(117, 128, 115, 0.717);
   background-color: rgba(117, 128, 115, 0.717);
 }
 
@@ -140,30 +183,20 @@ h2 {
   display: none;
   position: absolute;
 }
+
 /*elements buttons in menu*/
 .elements {
-  padding-top: 10px;
-  border-color: transparent;
-  margin: 0 auto 10px ;
+  margin: 0 auto 20px;
+  background-color: lightgray;
   display: block;
-  background-color: #adabab; 
-  color: white;
-  border-radius: 3px;
+  width: 120px;
+  height: 100px;
+  border-radius: 50%;
   border: none;
-  padding: 15px 0px 15px 0px;
-  width: 166px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 16px;
-  cursor: pointer;
 }
 
 .elements button {
   justify-items: center;
-}
-
-.elements:active {
-  border: 1px solid rgba(128, 128, 128, 0.559);
 }
 
 .elements img {
@@ -173,8 +206,10 @@ h2 {
 
 /* .imgList is list of images (clothes)*/
 .imgList {
-  width: 100%;
+  width: 30%;
+  display: block;
   padding: 1px;
+  margin: 0 auto 0;
 }
 
 .imgList img {
@@ -184,31 +219,45 @@ h2 {
   padding-left: 0px;
 }
 
-img {
+#img {
   border-color: transparent;
   border: 0px solid transparent;
 }
 
 /*.buttons class is buttons in .right-div*/
-.buttons {
-  border: 1.5px solid rgba(112, 112, 112, 0.192);
-  background-color: rgba(209, 209, 209, 0.651);
-  border-radius: 50%;
-  cursor: pointer;
-  align-items: center;
-  display: block;
-  width: 60px;
-  height: 60px;
-  margin: 0 auto 5px 0;
-  cursor: pointer;
-  z-index: 5;
+
+.btn__container {
+  margin: 1.5em;
 }
 
-.buttons:hover {
+.buttons {
+  border: 1.5px solid rgba(112, 112, 112, 0.192);
+  background-image: url("woodtx.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 6em;
+  height: 5em;
+  border: 4px solid lightgrey;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1.2em 0 0 0;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.icons {
+  font-size: 25px;
+  color: #FFFAFA;
+}
+
+/*.buttons:hover {
   background-color: rgba(105, 190, 119, 0.5);
   border-color: rgba(105, 190, 119, 0.671);
 }
-
+*/
 /*#question-button is in .right-class div*/
 #question {
   border: transparent;
@@ -216,9 +265,11 @@ img {
   border-radius: 50%;
   cursor: pointer;
   display: block;
+  border: 4px solid lightgrey;
   bottom: 0px;
   z-index: 5;
 }
+
 /*This is just shity test-- not working
 .buttons.testi {
   font-size: 10px;
@@ -226,32 +277,36 @@ img {
 
 /*Open and close div with clothes*/
 .scrollableDiv {
-  height: 97%;
+  height: 70%;
   width: 0%;
   position: absolute;
   z-index: 1;
-  top: 5;
+  top: 190px;
+  right: 200px;
   float: right;
-  background-color: rgba(128, 128, 128, 0.205);
-  backdrop-filter: blur(3px);
+  background-image: url("woodtx.jpg");
+  background-size: cover;
   overflow-x: hidden;
   transition: 0.5s;
+  border-radius: 200px;
+  border: 6px solid lightgray;
 }
 
 #openNav {
   cursor: pointer;
 }
 
-/*Button in top of clothes list*/
 #closeNav {
-  background-color: transparent;
-  border: none;
-  padding-bottom:10px;
-  margin: 0 auto 0;
   display: block;
-  font-size: 16px;
+  margin: 10px auto;
+  color: black;
+  border: 1px solid rgba(128, 128, 128, 0.548);
   cursor: pointer;
-  border-radius: 2px;
+  background-image: url("woodtx.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 50%;
 }
 
 #scrollableDivTitle button {
@@ -261,11 +316,21 @@ img {
 /*Back- button*/
 #goBack {
   display: none;
+  top: 700px;
+  right: 530px;
+  position: fixed;
   margin: 0 auto 0;
-  border-radius: 3px;
-  color: white;
+  color: black;
   border: 1px solid rgba(128, 128, 128, 0.548);
-  background-color: rgba(128, 128, 128, 0.358);;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  background-image: url("woodtx.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 50%;
+  z-index: 5;
 }
 
 /*Class of popups*/
@@ -273,25 +338,28 @@ img {
   color: rgba(116, 116, 116, 0.651);
 }
 
-.material-symbols-outlined.drag{
+.material-symbols-outlined.drag {
   color: rgb(255, 255, 255);
 }
+
 /*--------------For mobile devices:------------------- */
 @media only screen and (max-width: 767px) {
-  html {
-    
-  }
+  /*html {
+    //TestTest
+  }*/
+
   body {
     height: 99%;
 
   }
-  
+
   .right,
   .main {
     margin-left: auto;
     margin-right: auto;
   }
-/*Button menu on right side of the page*/
+
+  /*Button menu on right side of the page*/
   .right {
     order: 2;
     width: 100%;
@@ -304,22 +372,25 @@ img {
     margin: 0 auto 5px;
     display: inline-block;
   }
+
   /*#question-button is in .right-class div*/
-#question {
-  border: transparent;
-  background-color: transparent;
-  border-radius: 50%;
-  cursor: pointer;
-  display: block;
-  position: absolute;
-  top: 0px;
-  right: 0;
-  z-index: 5;
-}
-#question:hover {
-  background-color: rgba(105, 190, 119, 0.5);
-  border-color: rgba(105, 190, 119, 0.671);}
-  
+  #question {
+    border: transparent;
+    background-color: transparent;
+    border-radius: 50%;
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    z-index: 5;
+  }
+
+  #question:hover {
+    background-color: rgba(105, 190, 119, 0.5);
+    border-color: rgba(105, 190, 119, 0.671);
+  }
+
   .main,
   #img {
     order: 1;
@@ -328,6 +399,7 @@ img {
   }
 
   .buttons {
+    background-image: url("woodtx.jpg");
     width: 60px !important;
     height: 60px !important;
     border-radius: 50% !important;
@@ -336,17 +408,19 @@ img {
     position: relative;
     z-index: 700;
     display: flex;
+    color:rgb(255, 255, 255);
   }
 
-  .buttons:hover {
+  /*.buttons:hover {
     background-color: rgba(105, 190, 119, 0.5);
     border-color: rgba(105, 190, 119, 0.671);
   }
+  */
 
   .dragme {
     object-fit: scale-down;
     height: 100px;
-    width:100px;
+    width: 100px;
     max-width: 100%;
     left: 10%;
 
@@ -359,7 +433,9 @@ img {
     z-index: 900;
     top: 5px;
     float: left;
-    background-color: rgba(128, 128, 128, 0.123);
+    background-image: url("woodjpg");
+    background-size: cover;
+    background-repeat: no-repeat;
     overflow-x: hidden;
     transition: 0.5s;
   }
@@ -370,26 +446,12 @@ img {
     overflow-x: hide;
     padding: 1px;
   }
-
-  .elements {
-  padding-top: 5px;
-  border-color: transparent;
-  margin: 0 auto 10px ;
-  display: block;
-  background-color: #adabab; 
-  color: white;
-  border-radius: 3px;
-  border: none;
-  text-align: 0 auto 0;
-  text-decoration: none;
-  font-size: 12px;
-  max-width: 90%;
-  }
 }
 
 input[type="file"] {
   display: none;
 }
+
 /*
 .rotation-handle {
   These are important for touch actions*/
@@ -447,11 +509,30 @@ input[type="file"] {
   width: 50px;
 }
 
-.fa-solid.fa-shirt {
- 
-}
 svg {
   fill: rgba(116, 116, 116, 0.651);
 
 }
 
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  scrollbar-gutter: stable both-edges;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
