@@ -44,11 +44,13 @@ h2 {
   align-items: center;
   justify-content: center
 }
+
 .main__inner__box {
   background: url("model-test.jpg");
   border-radius: 116px;
 
 }
+
 /*Div->Button menu on right side of the page*/
 .right {
   margin: 3em 1em 3em 2em;
@@ -257,11 +259,6 @@ h2 {
   z-index: 5;
 }
 
-/*This is just shity test-- not working
-.buttons.testi {
-  font-size: 10px;
-}*/
-
 /*Open and close div with clothes*/
 .scrollableDiv {
   height: 70%;
@@ -329,15 +326,15 @@ h2 {
   color: rgb(255, 255, 255);
 }
 
-/*--------------For mobile devices:------------------- */
-@media only screen and (max-width: 767px) {
-  /*html {
-    //TestTest
-  }*/
+/*--------------For mobile devices:-------------------*/
+@media only screen and (max-width: 890px) {
 
   body {
-    height: 99%;
+    height: 100%;
+  }
 
+  .title__box {
+    display: none;
   }
 
   .right,
@@ -346,43 +343,9 @@ h2 {
     margin-right: auto;
   }
 
-  /*Button menu on right side of the page*/
-  .right {
-    order: 2;
-    width: 100%;
-    height: 10%;
-    margin-top: -60px;
-    z-index: 900;
-  }
-
   .right button {
     margin: 0 auto 5px;
     display: inline-block;
-  }
-
-  /*#question-button is in .right-class div*/
-  #question {
-    border: transparent;
-    background-color: transparent;
-    border-radius: 50%;
-    cursor: pointer;
-    display: block;
-    position: absolute;
-    top: 0px;
-    right: 0;
-    z-index: 5;
-  }
-
-  #question:hover {
-    background-color: rgba(105, 190, 119, 0.5);
-    border-color: rgba(105, 190, 119, 0.671);
-  }
-
-  .main,
-  #img {
-    order: 1;
-    width: 97%;
-    height: 99%;
   }
 
   .buttons {
@@ -397,12 +360,6 @@ h2 {
     display: flex;
     color: rgb(255, 255, 255);
   }
-
-  /*.buttons:hover {
-    background-color: rgba(105, 190, 119, 0.5);
-    border-color: rgba(105, 190, 119, 0.671);
-  }
-  */
 
   .dragme {
     object-fit: scale-down;
@@ -438,13 +395,6 @@ h2 {
 input[type="file"] {
   display: none;
 }
-
-/*
-.rotation-handle {
-  These are important for touch actions*/
-/*  touch-action: none;
-  user-select: none;
-}*/
 
 /*Scrollbar style*/
 /* width */
