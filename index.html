@@ -49,7 +49,7 @@
 -->
 
 
-<!-- Zoltan changes 09.11.22 
+  <!-- Zoltan changes 09.11.22 
     
   - Privacy popup alert changed to be smaller, and easier.
   - Side navigation moved from left to right
@@ -70,7 +70,7 @@
 
 <body>
   <div id="app">
-   <script>
+    <script>
       //Loading animation
       $("body").append(
         '<div style="" id="loadingDiv"><div class="loader">Loading...</div></div>'
@@ -84,7 +84,6 @@
         });
       }
     </script>
-
     <div class="main">
       <!--This popup shows notifications-->
       <div id="popupMessage" class="animated">
@@ -105,7 +104,7 @@
       <div id="img" class="main__inner__box">
       </div>
     </div>
-   </div> <!--here is imagebuttons: add image from file system, delete image, open menu, take a 
+    <!--here is imagebuttons: add image from file system, delete image, open menu, take a 
     screenshot and help-button-->
 
     <div class="right">
@@ -135,11 +134,10 @@
       </div>
     </div>
     <!--Menu which includes all draggable clothes-->
-    <button id="goBack" onclick="goBack()"><i class="icons fa-solid fa-arrow-left"></i></button>
     <div class="scrollableDiv" id="mySidebar">
       <div id="scrollableDivTitle">
-        <button id="closeNav" class="closeNav" onclick="closeNav()" style="position: sticky">
-          <i class="icons fa-solid fa-xmark"></i>
+        <button id="closeNav" class="closeNav" onclick="goBack()" style="position: sticky">
+          <i class="icons fa-solid fa-arrow-left"></i>
         </button>
       </div>
       <button class="elements" onclick="openWaterE()"><i class="icons fa-solid fa-droplet"></i></button>
@@ -160,7 +158,6 @@
           <img src="clothes/Water/turkoosi_sea_goddess_mekko.png" id="sea-goddess-blue" onclick="addClothes(this.id)" />
         </ul>
       </div>
-
       <button class="elements" onclick="openFireE()"><i class="icons fa-solid fa-fire"></i></button>
       <div class="fdiv" id="fdiv">
         <ul class="imgList">
@@ -176,7 +173,6 @@
           <img src="clothes/Fire/pohjolan_valo_punainen.png" id="nordic-light-red" onclick="addClothes(this.id)" />
         </ul>
       </div>
-
       <button class="elements" onclick="openWoodE()"><i class="icons fa-solid fa-tree"></i></button>
       <div class="wooddiv" id="wooddiv">
         <ul class="imgList">
@@ -204,7 +200,6 @@
           <img src="clothes/Metal/lehti_kult.png" id="leaf-gold" onclick="addClothes(this.id)" />
         </ul>
       </div>
-
       <button class="elements" onclick="openEarthE()"><i class="icons fa-solid fa-earth-americas"></i></button>
       <div class="ediv" id="ediv">
         <ul class="imgList">
@@ -225,29 +220,30 @@
             onclick="addClothes(this.id)" />
         </ul>
       </div>
-    </div>
-   </div>
-  </div>
-  <div class="popup"><button id="close" onclick="closePopUp()">×</button>
-   <h2>Welcome to use virtual fitting room!</h2>
-   <p>1. Add image</p> <img src="animations/addImage.gif" alt="How to use virtual fitting room" style="width:99%;height:99%;">
-   <p>2. Add clothes</p> <img src="animations/addClothes.gif" alt="How to use virtual fitting room" style="width:99%;height:99%;">
-   <p>3. Save!</p> <img src="animations/saveScreenshot.gif" alt="How to use virtual fitting room" style="width:99%;height:99%;">
-  </div>
-  <div class="popupPrivacy" - id="popupPrivacy">
+            </div>
+      <div class="popup"><button id="close" onclick="closePopUp()">×</button>
+        <h2>Welcome to use virtual fitting room!</h2>
+        <p>1. Add image</p> <img src="animations/addImage.gif" alt="How to use virtual fitting room"
+          style="width:99%;height:99%;">
+        <p>2. Add clothes</p> <img src="animations/addClothes.gif" alt="How to use virtual fitting room"
+          style="width:99%;height:99%;">
+        <p>3. Save!</p> <img src="animations/saveScreenshot.gif" alt="How to use virtual fitting room"
+          style="width:99%;height:99%;">
+      </div>
+      <div class="popupPrivacy" - id="popupPrivacy">
+        <h2>We care about your privacy!</h2>
+        <p>Application is collecting anonymous visitor data for research purposes.</br>
+          The study is being carried
+          out by Haaga-Helia University of Applied Sciences
+          as part of a wider development project supported by
+          the European Regional Development Fund in the Future
+          Touchless Shop project. The data collected for the
+          study will only be available to the researchers of
+          the project and will be destroyed no later than
+          September 1, 2024.</p>
+        <button id="allowPrivacyPolicy" onclick="allowPrivacyPolicy()">Accept</button>
+      </div>
 
-    <h2>We care about your privacy!</h2>
-    <p>Application is collecting anonymous visitor data for research purposes.</br>
-      The study is being carried
-      out by Haaga-Helia University of Applied Sciences
-      as part of a wider development project supported by
-      the European Regional Development Fund in the Future
-      Touchless Shop project. The data collected for the
-      study will only be available to the researchers of
-      the project and will be destroyed no later than
-      September 1, 2024.</p>
-    <button id="allowPrivacyPolicy" onclick="allowPrivacyPolicy()">Accept</button>
-  </div>
 </body>
 
 </html>
