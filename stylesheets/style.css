@@ -104,6 +104,7 @@ h2 {
   width: 80px;
   margin-left: 50%;
   margin-right: 50%;
+  position: absolute;
   display: table;
 
   /*--These are important for touch actions--*/
@@ -179,12 +180,15 @@ h2 {
 /*elements buttons in menu*/
 .elements {
   margin: 0 auto 20px;
-  background-color: lightgray;
+  /* background-color: rgb(211, 211, 211); */
+  background-image: url("woodalt.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
   display: block;
+  border: 4px solid lightgrey;
   width: 120px;
   height: 100px;
   border-radius: 50%;
-  border: none;
 }
 
 .elements button {
@@ -327,7 +331,8 @@ h2 {
 }
 
 /*--------------For mobile devices:-------------------*/
-@media only screen and (max-width: 890px) {
+/* @media only screen and (max-width: 890px) { */
+  @media only screen and (max-width: 1265px) {
 
   body {
     height: 100%;
@@ -377,7 +382,7 @@ h2 {
     z-index: 900;
     top: 5px;
     float: left;
-    background-image: url("woodjpg");
+    background-image: url("woodtx.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     overflow-x: hidden;
