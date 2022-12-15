@@ -65,7 +65,7 @@ iframe {
 .popupPrivacy {
   background-color: #d2d2d2b2;
   width: 40%;
-  height: 40%;
+  height: fit-content;
   padding: 40px 40px;
   position: absolute;
   transform: translate(-50%, -50%);
