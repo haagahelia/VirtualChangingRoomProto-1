@@ -71,10 +71,8 @@
         });
       }
     </script>
-   <div class="main">
-    <!--This popup shows notifications-->
-    <div id="popupMessage" class="animated">
-     <span class="popuptext" id="myPopup">Notification</span>
+   <div class="main"><!--This popup shows notifications-->
+    <div id="popupMessage" class="animated"><span class="popuptext" id="myPopup">Notification</span>
     </div>
     <script>
         //remove selected draggable element
@@ -96,77 +94,86 @@
     <div class="title__box">
      <h3 id="title__heading">Magic Fitting Room</h3>
     </div>
-    <div class="btn__container">
-     <button class="buttons" id="fileBtn"> <label for="files" class="custom-file"><i class="icons fa-solid fa-image"></i> </label> <input id="files" type="file" name="image" id="file" onclick="choose()"> </button> <button type="button" class="buttons" id="deleteBtn" onclick="deleteImg()"> <i class="icons fa-solid fa-trash"></i> </button> <button type="button" class="buttons" id="openNav" onclick="openNav()"> <i class="icons fa-solid fa-shirt"></i> </button> <button id="screenS" class="buttons" onclick="screenshot()"> <i class="icons fa-solid fa-download"></i> </button>
-     <div id="small_buttons">
-      <button type="button" class="buttons" id="question" onclick="openPopUp()"> <i class="icons fa-solid fa-question"></i> </button>
+    <div class="btn__container"><button class="buttons" id="fileBtn"> <label for="files" class="custom-file"><i class="icons fa-solid fa-image"></i> </label> <input id="files" type="file" name="image" id="file" onclick="choose()"> </button> <button type="button" class="buttons" id="deleteBtn" onclick="deleteImg()"> <i class="icons fa-solid fa-trash"></i> </button> <button type="button" class="buttons" id="openNav" onclick="openNav()"> <i class="icons fa-solid fa-shirt"></i> </button> <button id="screenS" class="buttons" onclick="screenshot()"> <i class="icons fa-solid fa-download"></i> </button>
+     <div id="small_buttons"><button type="button" class="buttons" id="question" onclick="openPopUp()"> <i class="icons fa-solid fa-question"></i> </button>
      </div> <!--Menu which includes all draggable clothes-->
      <div class="scrollableDiv" id="mySidebar">
-      <div id="scrollableDivTitle">
-       <button id="goBack" class="goBack" onclick="goBack()" style="position: sticky"> <i class="icons fa-solid fa-arrow-left"></i> </button> <button id="closeNav" class="closeNav" onclick="closeNav()" style="position: sticky"><i class="icons fa-solid fa-x"></i></button>
+      <div id="scrollableDivTitle"><button id="goBack" class="goBack" onclick="goBack()" style="position: sticky"> <i class="icons fa-solid fa-arrow-left"></i> </button> <button id="closeNav" class="closeNav" onclick="closeNav()" style="position: sticky"><i class="icons fa-solid fa-x"></i></button>
       </div> <button class="elements" onclick="openWaterE()"><i class="icons fa-solid fa-droplet"></i></button>
       <div class="wdiv" id="wdiv">
        <ul class="imgList"> <img src="clothes/Water/turkoosi_sea_goddess_mekko.png" id="Waturkoosi_sea_goddess_mekko" onclick="addClothes(this.id)" /> </ul> <ul class="imgList"> <img src="clothes/Water/Ainikki-blue.png" id="WaAinikki-blue" onclick="addClothes(this.id)" /> </ul> <ul class="imgList"> <img src="clothes/Water/Pohjolan amatson mekko_musta etu_edited.png" id="WaPohjolan amatson mekko_musta etu_edited" onclick="addClothes(this.id)" /> </ul> <ul class="imgList"> <img src="clothes/Water/Pohjan tähti poncho, turkoosi.png" id="WaPohjan tähti poncho, turkoosi" onclick="addClothes(this.id)" /> </ul> <ul class="imgList"> <img src="clothes/Water/sininen_poncho.png" id="Wasininen_poncho" onclick="addClothes(this.id)" /> </ul> <ul class="imgList"> <img src="clothes/Water/Heimo korvakorut_musta 1_edited.png" id="WaHeimo korvakorut_musta 1_edited" onclick="addClothes(this.id)" /> </ul> <ul class="imgList"> <img src="clothes/Water/Äiti meri sininen etu.png" id="WaÄiti meri sininen etu" onclick="addClothes(this.id)" /> </ul>
       </div> <button class="elements" onclick="openFireE()"><i class="icons fa-solid fa-fire"></i></button>
       <div class="fdiv" id="fdiv">
-       <ul class="imgList"><img src="clothes/Fire/pohjolan_amatsooni_mekko_pun.png" id="Fipohjolan_amatsooni_mekko_pun" onclick="addClothes(this.id)">
+       <ul class="imgList">
+        <img src="clothes/Fire/pohjolan_amatsooni_mekko_pun.png" id="Fipohjolan_amatsooni_mekko_pun" onclick="addClothes(this.id)">
        </ul>
-       <ul class="imgList"><img src="clothes/Fire/Louhi seitti_Aurora_edited_edited_edited(1).png" id="FiLouhi seitti_Aurora_edited_edited_edited(1)" onclick="addClothes(this.id)">
+       <ul class="imgList">
+        <img src="clothes/Fire/Louhi seitti_Aurora_edited_edited_edited(1).png" id="FiLouhi seitti_Aurora_edited_edited_edited(1)" onclick="addClothes(this.id)">
        </ul>
-       <ul class="imgList"><img src="clothes/Fire/pohjolan_valo_punainen.png" id="Fipohjolan_valo_punainen" onclick="addClothes(this.id)">
+       <ul class="imgList">
+        <img src="clothes/Fire/pohjolan_valo_punainen.png" id="Fipohjolan_valo_punainen" onclick="addClothes(this.id)">
        </ul>
-       <ul class="imgList"><img src="clothes/Fire/Lehti koravkorut_pinkki_edited.png" id="FiLehti koravkorut_pinkki_edited" onclick="addClothes(this.id)">
+       <ul class="imgList">
+        <img src="clothes/Fire/Lehti koravkorut_pinkki_edited.png" id="FiLehti koravkorut_pinkki_edited" onclick="addClothes(this.id)">
        </ul>
-       <ul class="imgList"><img src="clothes/Fire/City Shaman hiuslenkki_punainen.png" id="FiCity Shaman hiuslenkki_punainen" onclick="addClothes(this.id)">
+       <ul class="imgList">
+        <img src="clothes/Fire/City Shaman hiuslenkki_punainen.png" id="FiCity Shaman hiuslenkki_punainen" onclick="addClothes(this.id)">
        </ul>
-       <ul class="imgList"><img src="clothes/Fire/Lehti koravkorut_punainen_edited.png" id="FiLehti koravkorut_punainen_edited" onclick="addClothes(this.id)">
+       <ul class="imgList">
+        <img src="clothes/Fire/Lehti koravkorut_punainen_edited.png" id="FiLehti koravkorut_punainen_edited" onclick="addClothes(this.id)">
        </ul>
-       <ul class="imgList"><img src="clothes/Fire/Lempi _pink.png" id="FiLempi _pink" onclick="addClothes(this.id)">
+       <ul class="imgList">
+        <img src="clothes/Fire/Lempi _pink.png" id="FiLempi _pink" onclick="addClothes(this.id)">
        </ul>
-       <ul class="imgList"><img src="clothes/Fire/aiti_meri_punainen.png" id="Fiaiti_meri_punainen" onclick="addClothes(this.id)">
+       <ul class="imgList">
+        <img src="clothes/Fire/aiti_meri_punainen.png" id="Fiaiti_meri_punainen" onclick="addClothes(this.id)">
        </ul>
       </div> <button class="elements" onclick="openWoodE()"><i class="icons fa-solid fa-tree"></i></button>
       <div class="wooddiv" id="wooddiv">
-       <ul class="imgList"><img src="clothes/Wood/Pohjan tähti poncho_metsänvihreä_edited.png" id="WoPohjan tähti poncho_metsänvihreä_edited" onclick="addClothes(this.id)">
+       <ul class="imgList">
+        <img src="clothes/Wood/Pohjan tähti poncho_metsänvihreä_edited.png" id="WoPohjan tähti poncho_metsänvihreä_edited" onclick="addClothes(this.id)">
        </ul>
-       <ul class="imgList"><img src="clothes/Wood/sea_goddess_garland_sunny.png" id="Wosea_goddess_garland_sunny" onclick="addClothes(this.id)">
+       <ul class="imgList">
+        <img src="clothes/Wood/sea_goddess_garland_sunny.png" id="Wosea_goddess_garland_sunny" onclick="addClothes(this.id)">
        </ul>
-       <ul class="imgList"><img src="clothes/Wood/lehti_korvis.png" id="Wolehti_korvis" onclick="addClothes(this.id)">
+       <ul class="imgList">
+        <img src="clothes/Wood/lehti_korvis.png" id="Wolehti_korvis" onclick="addClothes(this.id)">
        </ul>
-       <ul class="imgList"><img src="clothes/Wood/nordic_light_green.png" id="Wonordic_light_green" onclick="addClothes(this.id)">
+       <ul class="imgList">
+        <img src="clothes/Wood/nordic_light_green.png" id="Wonordic_light_green" onclick="addClothes(this.id)">
        </ul>
       </div> <button class="elements" onclick="openMetalE()"><i class="icons fa-solid fa-gem"></i></button>
       <div class="mdiv" id="mdiv">
-       <ul class="imgList"><img src="clothes/Metal/lehti_hop.png" id="Melehti_hop" onclick="addClothes(this.id)">
+       <ul class="imgList">
+        <img src="clothes/Metal/lehti_hop.png" id="Melehti_hop" onclick="addClothes(this.id)">
        </ul>
-       <ul class="imgList"><img src="clothes/Metal/lahde_kult.png" id="Melahde_kult" onclick="addClothes(this.id)">
+       <ul class="imgList">
+        <img src="clothes/Metal/lahde_kult.png" id="Melahde_kult" onclick="addClothes(this.id)">
        </ul>
-       <ul class="imgList"><img src="clothes/Metal/lehti_kult.png" id="Melehti_kult" onclick="addClothes(this.id)">
+       <ul class="imgList">
+        <img src="clothes/Metal/lehti_kult.png" id="Melehti_kult" onclick="addClothes(this.id)">
        </ul>
-       <ul class="imgList"><img src="clothes/Metal/alku_kult.png" id="Mealku_kult" onclick="addClothes(this.id)">
+       <ul class="imgList">
+        <img src="clothes/Metal/alku_kult.png" id="Mealku_kult" onclick="addClothes(this.id)">
        </ul>
       </div> <button class="elements" onclick="openEarthE()"><i class="icons fa-solid fa-earth-americas"></i></button>
       <div class="ediv" id="ediv">
-       <ul class="imgList">
-        <img src="clothes/Earth/Ainikki pellerine_white reindeer_edited_edited.png" id="EaAinikki pellerine_white reindeer_edited_edited" onclick="addClothes(this.id)">
+       <ul class="imgList"><img src="clothes/Earth/Ainikki pellerine_white reindeer_edited_edited.png" id="EaAinikki pellerine_white reindeer_edited_edited" onclick="addClothes(this.id)">
        </ul>
-       <ul class="imgList">
-        <img src="clothes/Earth/Meren neito kaulakoru_sunrise.png" id="EaMeren neito kaulakoru_sunrise" onclick="addClothes(this.id)">
+       <ul class="imgList"><img src="clothes/Earth/Meren neito kaulakoru_sunrise.png" id="EaMeren neito kaulakoru_sunrise" onclick="addClothes(this.id)">
        </ul>
-       <ul class="imgList">
-        <img src="clothes/Earth/nodic_star-yellow.png" id="Eanodic_star-yellow" onclick="addClothes(this.id)">
+       <ul class="imgList"><img src="clothes/Earth/nodic_star-yellow.png" id="Eanodic_star-yellow" onclick="addClothes(this.id)">
        </ul>
-       <ul class="imgList">
-        <img src="clothes/Earth/Pohjan tähti poncho oranssi_edited_edited_edited.png" id="EaPohjan tähti poncho oranssi_edited_edited_edited" onclick="addClothes(this.id)">
+       <ul class="imgList"><img src="clothes/Earth/Pohjan tähti poncho oranssi_edited_edited_edited.png" id="EaPohjan tähti poncho oranssi_edited_edited_edited" onclick="addClothes(this.id)">
        </ul>
-       <ul class="imgList">
-        <img src="clothes/Earth/heimo_korvakorut_puunhenki.png" id="Eaheimo_korvakorut_puunhenki" onclick="addClothes(this.id)">
+       <ul class="imgList"><img src="clothes/Earth/heimo_korvakorut_puunhenki.png" id="Eaheimo_korvakorut_puunhenki" onclick="addClothes(this.id)">
        </ul>
       </div>
      </div>
     </div>
    </div>
-   <div class="popup"><button id="close" onclick="closePopUp()">×</button>
+   <div class="popup">
+    <button id="close" onclick="closePopUp()">×</button>
     <h2>How to use the Magic Fitting Room!</h2>
     <p>1. Add a picture of yourself by clicking the image button (Vertical images are better)</p>
     <video autoplay loop src="animations/Add image.webm" alt="How to add your picture" style="width:99%;height:99%;"></video>
